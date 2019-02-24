@@ -19,7 +19,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/site/index' },
+  '/': { controller: 'startup/StartupController', action: 'dashboardList' },
   'GET /homepage':        { controller: 'startup/StartupController', action: 'dashboardList' },
   'GET /startup/create':  { view:   'pages/startup/create' },
   'GET /startup/list':  { controller: 'startup/StartupController', action: 'list' },
