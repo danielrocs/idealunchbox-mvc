@@ -1,0 +1,71 @@
+<% include ../dashboard/menu.ejs %>
+
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Content area -->
+    <div class="content">
+
+        <!-- Basic card -->
+        <div class="card">
+            <div class="card-header header-elements-inline">
+                <h5 class="card-title">Update a Startup</h5>
+                <div class="header-elements">
+                    <div class="list-icons">
+                        <a class="list-icons-item" data-action="collapse"></a>
+                        <a class="list-icons-item" data-action="reload"></a>
+                        <a class="list-icons-item" data-action="remove"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <form method="post" action="/startup/update">
+                    <div class="form-group">
+                        <label for="title">Id</label>
+                        <input type="text" name="id" value="<%= startupEdit.id %>" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Startup Name</label>
+                        <input type="text" name="name" value="<%= startupEdit.name %>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Description</label>
+                        <input type="text" name="description" value="<%= startupEdit.description %>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Industry</label>
+                        <input type="text" name="industry" value="<%= startupEdit.industry %>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Business Model</label>
+                        <input type="text" name="businessModel" value="<%= startupEdit.businessModel %>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Growth Stage</label>
+                        <input type="text" name="growthStage" value="<%= startupEdit.growthStage %>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Location</label>
+                        <input type="text" name="location" value="<%= startupEdit.location %>" class="form-control">
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="body">Body</label>
+                        <textarea name="body" class="form-control"></textarea>
+                    </div> -->
+                    <input type="submit" value="Save" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+        <!-- /basic card -->
+
+
+    </div>
+    <!-- /content area -->
+
+</div>
+<!-- /main content -->
+
+</div>
+<!-- /page content -->
