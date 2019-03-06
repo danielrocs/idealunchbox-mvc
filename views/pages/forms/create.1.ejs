@@ -1,0 +1,643 @@
+<% include ../dashboard/menu.ejs %>
+
+
+   	<!-- Theme JS files -->
+	<script src="/global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+	<script src="/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="/global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="/global_assets/js/plugins/forms/validation/validate.min.js"></script>
+	<script src="/global_assets/js/plugins/extensions/cookie.js"></script>
+	<script src="/global_assets/js/demo_pages/form_wizard.js"></script>
+	<!-- /theme JS files -->
+
+
+   	<!-- Core JS files -->
+	<script src="/global_assets/js/plugins/ui/ripple.min.js"></script>
+	<!-- /core JS files -->
+
+
+
+
+
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Content area -->
+    <div class="content">
+
+        <!-- Basic card -->
+        <div class="card">
+            <div class="card-header header-elements-inline">
+                <h5 class="card-title">Add a new Startup</h5>
+                <div class="header-elements">
+                    <div class="list-icons">
+                        <a class="list-icons-item" data-action="collapse"></a>
+                        <a class="list-icons-item" data-action="reload"></a>
+                        <a class="list-icons-item" data-action="remove"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+            <div class="card-body">
+                
+                <legend class="text-uppercase font-size-sm font-weight-bold">STARTUP SOFT LANDING</legend>
+
+                <form class="wizard-form steps-basic" action="#" data-fouc>
+						<h6>Personal contact</h6>
+						<fieldset>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Which Cohort are you Interested?</label>
+										<select name="location" data-placeholder="Select" class="form-control form-control-select2" data-fouc>
+											<option></option>
+											<optgroup label="Select">
+												<option value="1">Hard Landing - May/19</option>
+												<option value="2">Soft Landing - August/19</option>
+												<option value="3">Hard Landing - Nov/19</option>
+											</optgroup>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Startup Name:</label>
+										<input type="text" name="name" class="form-control" placeholder="John Doe">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>URL Website</label>
+											<input type="text" class="form-control" value="http://">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>First Name:</label>
+										<input type="text" name="name" class="form-control" placeholder="John">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Last Name:</label>
+										<input type="text" name="name" class="form-control" placeholder="Doe">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Email address:</label>
+										<input type="email" name="email" class="form-control" placeholder="your@email.com">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>LinkedIn address:</label>
+										<input type="text" name="name" class="form-control" placeholder="http://ca.linkedin.com/in/linkedinname">
+									</div>
+								</div>
+
+
+							</div>
+
+
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Contact number:</label>
+										<input type="text" name="tel" class="form-control" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999">
+									</div>
+								</div>
+
+								<!-- <div class="col-md-6">
+									<label>Date of birth:</label>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group">
+												<select name="birth-month" data-placeholder="Month" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="1">January</option>
+													<option value="2">February</option>
+													<option value="3">March</option>
+													<option value="4">April</option>
+													<option value="5">May</option>
+													<option value="6">June</option>
+													<option value="7">July</option>
+													<option value="8">August</option>
+													<option value="9">September</option>
+													<option value="10">October</option>
+													<option value="11">November</option>
+													<option value="12">December</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+											<div class="form-group">
+												<select name="birth-day" data-placeholder="Day" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="...">...</option>
+													<option value="31">31</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+											<div class="form-group">
+												<select name="birth-year" data-placeholder="Year" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="1">1980</option>
+													<option value="2">1981</option>
+													<option value="3">1982</option>
+													<option value="4">1983</option>
+													<option value="5">1984</option>
+													<option value="6">1985</option>
+													<option value="7">1986</option>
+													<option value="8">1987</option>
+													<option value="9">1988</option>
+													<option value="10">1989</option>
+													<option value="11">1990</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</fieldset>
+
+						<h6>Startup Info</h6>
+						<fieldset>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>How many partners are in the startup?</label>
+		                                <input type="text" name="university" placeholder="5 people" class="form-control">
+	                                </div>
+								</div>
+
+								<!-- <div class="col-md-6">
+									<div class="form-group">
+										<label>When:</label>
+
+
+                                    </div>
+								</div> -->
+
+
+								<div class="col-md-6">
+									<label>When was the startup created?</label>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group">
+												<select name="birth-month" data-placeholder="Month" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="1">January</option>
+													<option value="2">February</option>
+													<option value="3">March</option>
+													<option value="4">April</option>
+													<option value="5">May</option>
+													<option value="6">June</option>
+													<option value="7">July</option>
+													<option value="8">August</option>
+													<option value="9">September</option>
+													<option value="10">October</option>
+													<option value="11">November</option>
+													<option value="12">December</option>
+												</select>
+											</div>
+										</div>
+
+										<!-- <div class="col-md-4">
+											<div class="form-group">
+												<select name="birth-day" data-placeholder="Day" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="...">...</option>
+													<option value="31">31</option>
+												</select>
+											</div>
+										</div> -->
+
+										<div class="col-md-4">
+											<div class="form-group">
+												<select name="birth-year" data-placeholder="Year" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="1">2019</option>
+													<option value="2">2018</option>
+													<option value="3">2017</option>
+													<option value="4">2016</option>
+													<option value="5">2015</option>
+													<option value="6">2014</option>
+													<option value="7">2013</option>
+													<option value="8">2012</option>
+													<option value="9">2011</option>
+													<option value="10">2010</option>
+													<option value="11">2008</option>
+													<option value="11">2007</option>
+													<option value="11">2006</option>
+													<option value="11">2005</option>
+													<option value="11">2004</option>
+													<option value="11">2003</option>
+													<option value="11">2002</option>
+													<option value="11">2001</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>How many founders does the startup have?</label>
+										<input type="text" name="name" class="form-control" placeholder="2 people">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+											<label>Is your startup women majority owned?</label>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="availability" class="form-input-styled" data-fouc>
+													Yes
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="availability" class="form-input-styled" data-fouc>
+													No
+												</label>
+											</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="row">
+								<div class="col-md-6">
+									<!-- <div class="form-group">
+										<label>How many founders does the startup have?</label>
+		                <input type="text" name="degree-level" placeholder="2 people" class="form-control">
+	                </div> -->
+
+									<div class="form-group">
+										<label>Please choose the sub-sector the startup relates to:</label>
+										<select name="location" data-placeholder="Select" class="form-control form-control-select2" data-fouc>
+											<option></option>
+											<optgroup label="Select">
+												<option value="1">Artificial Intelligence</option>
+												<option value="1">Advanced Manufacturing and Robotics</option>
+												<option value="1">Agtech</option>
+												<option value="1">Adtech</option>
+												<option value="1">Cleantech</option>
+												<option value="1">Consumer Electronics</option>
+												<option value="1">Cybersecurity</option>
+												<option value="1">Edtech</option>
+												<option value="1">Fintech</option>
+												<option value="1">Gaming</option>
+												<option value="1">Health and Life Sciences</option>
+												<option value="1">Other</option>
+											</optgroup>
+										</select>
+									</div>
+
+								</div>
+
+								<div class="col-md-6">
+									<!-- <div class="row">
+										<div class="col-md-6">
+											<label>From:</label>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+					                                    <select name="education-from-month" data-placeholder="Month" class="form-control form-control-select2" data-fouc>
+					                                    	<option></option>
+					                                        <option value="January">January</option>
+					                                        <option value="...">...</option>
+					                                        <option value="December">December</option>
+					                                    </select>
+				                                    </div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="form-group">
+					                                    <select name="education-from-year" data-placeholder="Year" class="form-control form-control-select2" data-fouc>
+					                                        <option></option>
+					                                        <option value="1995">1995</option>
+					                                        <option value="...">...</option>
+					                                        <option value="1980">1980</option>
+					                                    </select>
+				                                    </div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<label>To:</label>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+					                                    <select name="education-to-month" data-placeholder="Month" class="form-control form-control-select2" data-fouc>
+					                                    	<option></option>
+					                                        <option value="January">January</option>
+					                                        <option value="...">...</option>
+					                                        <option value="December">December</option>
+					                                    </select>
+				                                    </div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="form-group">
+					                                    <select name="education-to-year" data-placeholder="Year" class="form-control form-control-select2" data-fouc>
+					                                        <option></option>
+					                                        <option value="1995">1995</option>
+					                                        <option value="...">...</option>
+					                                        <option value="1980">1980</option>
+					                                    </select>
+				                                    </div>
+												</div>
+											</div>
+										</div>
+									</div> -->
+
+									<!-- <div class="form-group">
+										<label>Language of education:</label>
+		                                <input type="text" name="education-language" placeholder="English, German etc." class="form-control">
+	                                </div> -->
+								</div>
+							</div>
+						</fieldset>
+
+						<h6>Startup investment</h6>
+						<fieldset>
+							<div class="row">
+								<div class="col-md-6">
+										<div class="form-group">
+												<label>Has the startup ever received an investment?</label>
+												<div class="form-check">
+													<label class="form-check-label">
+														<input type="radio" name="availability" class="form-input-styled" data-fouc>
+														Yes
+													</label>
+												</div>
+												<div class="form-check">
+													<label class="form-check-label">
+														<input type="radio" name="availability" class="form-input-styled" data-fouc>
+														No
+													</label>
+												</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>If yes, how many investments?</label>
+											<select name="location" data-placeholder="Select" class="form-control form-control-select2" data-fouc>
+												<option></option>
+												<optgroup label="Select">
+													<option value="1">Less than 3</option>
+													<option value="2">Less than 10</option>
+													<option value="3">10 or More</option>
+												</optgroup>
+											</select>
+										</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>If yes, what type of investment? (Please, select multiple if applicable)</label>
+										<select name="location" data-placeholder="Select" class="form-control form-control-select2" data-fouc>
+											<option></option>
+											<optgroup label="Select">
+												<option value="1">Seed</option>
+												<option value="1">Convertible Note</option>
+												<option value="1">Crowdfunding</option>
+												<option value="1">Private Equity</option>
+												<option value="1">Series A</option>
+											</optgroup>
+										</select>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+											<label>Has the startup been or continues to be part of an incubator?</label>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="availability" class="form-input-styled" data-fouc>
+													Yes
+												</label>
+											</div>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="availability" class="form-input-styled" data-fouc>
+													No
+												</label>
+											</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Incubator Name:</label>
+										<input type="text" name="name" class="form-control" placeholder="John Doe">
+									</div>
+								</div>
+
+
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+											<label>Has the startup participated in an accelerator before?</label>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="availability" class="form-input-styled" data-fouc>
+													Yes
+												</label>
+											</div>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="availability" class="form-input-styled" data-fouc>
+													No
+												</label>
+											</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>If yes, please provide the name and URL of the program</label>
+											<input type="text" class="form-control" value="http://">
+									</div>
+								</div>
+							</div>
+
+						</fieldset>
+
+						<h6>Additional info</h6>
+						<fieldset>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Where did you find us?</label>
+	                  	<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc>
+	                    	<option></option>
+	                      <option value="linkedin">LinkedIn</option>
+	                      <option value="google">Google</option>
+	                      <option value="adwords">Google AdWords</option>
+	                      <option value="other">Other source</option>
+	                    </select>
+                    </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Does the startup need our assistance to fund the Cohort?</label>
+	                  	<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc>
+	                    	<option></option>
+	                      <option value="linkedin">Yes, both Soft and Hard Landings</option>
+	                      <option value="google">Yes, only the Hard Landing</option>
+	                      <option value="adwords">Not at this moment</option>
+	                    </select>
+                    </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Why should we choose this startup for our Cohort?</label>
+										<input type="text" name="name" class="form-control" placeholder="John Doe">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>What do you hope to gain from joining our cohort?</label>
+										<input type="text" name="name" class="form-control" placeholder="John Doe">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Why do you think your business will work in the US?</label>
+										<input type="text" name="name" class="form-control" placeholder="John Doe">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Please list the country citizenships you have:</label>
+										<input type="text" name="name" class="form-control" placeholder="John Doe">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>How proficient is your English?</label>
+											<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc>
+												<option></option>
+												<option value="linkedin">Beginner</option>
+												<option value="google">Intermediate</option>
+												<option value="adwords">Fluent</option>
+												<option value="adwords">Native language</option>
+											</select>
+										</div>
+								</div>
+							</div>
+
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Describe the startup's product and its differentiator:</label>
+	                  <textarea name="additional-info" rows="5" cols="5" placeholder="If you want to add any info, do it here." class="form-control"></textarea>
+                  </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="d-block">Please upload your Pitch Deck</label>
+										<input type="file" name="resume" class="form-input-styled" data-fouc>
+										<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 10Mb</span>
+									</div>
+								</div>
+							</div>
+
+						</fieldset>
+					</form>
+
+
+
+            </div>
+        </div>
+        <!-- /basic card -->
+
+
+    </div>
+    <!-- /content area -->
+
+
+
+    
+
+</div>
+<!-- /main content -->
+
+</div>
+<!-- /page content -->

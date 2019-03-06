@@ -27,7 +27,9 @@ module.exports.routes = {
   'GET /startup/edit/:id':   {controller: 'startup/StartupController', action: 'edit'},
   'POST /startup/update':     {controller: 'startup/StartupController', action: 'update'},
   'GET /startup/delete/:id':     {controller: 'startup/StartupController', action: 'delete'},
-  
+  //'GET /forms/create':  { view:   'pages/forms/create', locals: {layout: 'layouts/layout-form'}  },
+  'GET /forms/create':  { view:   'pages/forms/create' },
+
 
 
   /***************************************************************************

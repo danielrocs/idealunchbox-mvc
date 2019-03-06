@@ -32,7 +32,7 @@ var AlpacaAdvanced = function() {
         $('#alpaca-option-tree').alpaca({
             schema: {
                 type: 'number',
-                title: 'What number would like for your sports jersey?'
+                title: 'Country'
             },
             options: {
                 type: 'optiontree',
@@ -110,8 +110,8 @@ var AlpacaAdvanced = function() {
 
         // Using connector
         $('#alpaca-option-tree-connector').alpaca({
-            schemaSource: '../../../../global_assets/demo_data/alpaca/optiontree-custom-schema.json',
-            optionsSource: '../../../../global_assets/demo_data/alpaca/optiontree-custom-options.json',
+            schemaSource: '/global_assets/demo_data/alpaca/optiontree-custom-schema.json',
+            optionsSource: '/global_assets/demo_data/alpaca/optiontree-custom-options.json',
             options: {
                 focus: false
             }

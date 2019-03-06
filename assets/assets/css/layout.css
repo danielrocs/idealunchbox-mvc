@@ -183,7 +183,7 @@ body {
 .page-header-light {
   background-color: #fff; }
   .page-header-light.has-cover {
-    background: url(../../../../../../global_assets/images/backgrounds/seamless.png); }
+    background: url(/global_assets/images/backgrounds/seamless.png); }
 
 .page-header-dark {
   background-color: #273246;
@@ -203,7 +203,7 @@ body {
   .page-header-dark .page-header-content .breadcrumb > .active {
     color: rgba(255, 255, 255, 0.5); }
   .page-header-dark.has-cover {
-    background: url(../../../../../../global_assets/images/login_cover.jpg);
+    background: url(/global_assets/images/login_cover.jpg);
     background-size: cover; }
 
 .page-header-light,
@@ -990,7 +990,7 @@ body {
     border-left-width: 1px; }
 
 .sidebar-user-material .sidebar-user-material-body {
-  background: url(../../../../../../global_assets/images/backgrounds/user_bg4.jpg) center center no-repeat;
+  background: url(/global_assets/images/backgrounds/user_bg4.jpg) center center no-repeat;
   background-size: cover; }
 
 .sidebar-dark .sidebar-user-material .collapse {
@@ -1039,7 +1039,7 @@ body {
  *
  * ---------------------------------------------------------------------------- */
 .layout-boxed-bg {
-  background: url(../../../../../../global_assets/images/backgrounds/boxed_bg.png) repeat; }
+  background: url(/global_assets/images/backgrounds/boxed_bg.png) repeat; }
 
 .navbar > .container,
 .breadcrumb-line > .container {

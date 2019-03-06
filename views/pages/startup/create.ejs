@@ -1,5 +1,20 @@
 <% include ../dashboard/menu.ejs %>
 
+<!-- <script src="/global_assets/js/demo_pages/alpaca_advanced.js"></script> -->
+	<!-- Theme JS files -->
+	<script src="/global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
+	<script src="/global_assets/js/plugins/forms/inputs/alpaca/alpaca.min.js"></script>
+	<!-- <script src="/global_assets/js/plugins/forms/inputs/alpaca/price_format.min.js"></script> -->
+	<script src="/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<!-- <script src="/global_assets/js/plugins/ui/prism.min.js"></script> -->
+	<!-- <script src="/global_assets/js/plugins/editors/ckeditor/ckeditor.js"></script> -->
+	<!-- <script src="/global_assets/js/plugins/forms/styling/uniform.min.js"></script> -->
+
+	<script src="assets/js/app.js"></script>
+	<script src="/global_assets/js/demo_pages/alpaca_advanced.js"></script>
+	<!-- /theme JS files -->
+
+
 <!-- Main content -->
 <div class="content-wrapper">
 
@@ -47,8 +62,42 @@
                         <input type="text" name="location" class="form-control">
                     </div>
 
+                    
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Country Selecor</h6>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example produces the same form, but uses a connector to load 
+                                    the schema and options. The options JSON is loaded and merged with some inline options that provide to 
+                                    override a submit click handler.</p>
+								<div id="alpaca-option-tree-connector"></div>
+								<!-- <a href="#alpaca-option-tree-connector-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-option-tree-connector-source">
+									<pre class="language-javascript"><code>// Using connector
+                                        $('#alpaca-option-tree-connector').alpaca({
+                                            schemaSource: '/global_assets/demo_data/alpaca/optiontree-custom-schema.json',
+                                            optionsSource: '/global_assets/demo_data/alpaca/optiontree-custom-options.json',
+                                            options: {
+                                                focus: false
+                                            }
+                                        });</code></pre>
+								</div> -->
+							</div>
+						</div>
+					</div>
+
+
+
+
                     <input type="submit" value="Save" class="btn btn-primary">
                 </form>
+
+
+
             </div>
         </div>
         <!-- /basic card -->
